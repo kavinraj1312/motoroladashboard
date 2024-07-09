@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Result Dashboard| <%= title.topic %>
+  </title>
+  <style>
+    body {
+  background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+  background-size: 200% 100%; /* double the width of the body */
+  background-position: 0% 0%; /* initial position */
+  transition: background-position 10s ease-in-out; /* transition effect */
+  animation: moveGradient 10s infinite; /* animation to move the gradient */
+  font-family: 'Source Sans Pro Topnav', sans-serif;
+      margin: 0;
+      padding: 0;
+     background-color: #00DBDE;
+      letter-spacing: 1px;
+}
+
+
+    .header {
+      background-color:black;
+      height: 70px;
+      display: flex;
+      color: #fff;
+      padding: 10px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 1;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo{
+height:90px;
+width:90px;
+
+
+}
+    .navbar {
+      list-style: none;
+      margin: 20px 20px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar li {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .navbar a {
+      display: flex;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    .navbar li a i {
+      margin-right: 10px;
+      /* adjust the margin to your liking */
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+      border-radius: 2px;
+    }
+
+    .container {
+      display: flex;
+      background-color: white;
+      flex-wrap: wrap;
+      width: 98%;
+      justify-content: center;
+      max-width: 98%;
+      padding: 15px;
+      border-radius: 8px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px #003135;
+      margin-top: 100px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+
+
+    h2 {
+      text-align: center;
+      color: #EDF4F2;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 2);
+    }
+
+    h4 {
+      text-align: center;
+      margin: auto;
+      margin-right: 100px;
+      justify-content: center;
+      display: block;
+    }
+
+    #pass {
+      box-shadow: 0 0 10px rgb(84, 145, 84);
+    }
+
+    #fail {
+      box-shadow: 0 0 10px rgb(130, 24, 24);
+    }
+
+    .result {
+      flex-basis: 15%;
+      margin: 10px;
+      transition: transform 0.2s ease;
+      padding: 10px;
+      border: 1px solid #ddd;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgb(180, 130, 66);
+    }
+
+    .result:hover {
+      transform: scale(1.05);
+    }
+
+    .result span {
+      font-size: 10px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+
+    #pass span {
+      color: green;
+    }
+
+    #fail span {
+      color: red;
+    }
+
+    .result p {
+      font-size: 1.2rem;
+      color: #666;
+      text-align: center;
+      justify-content: center;
+    }
+
+
+
+    .footer {
+      background-color:black;
+      color: #EDF4F2;
+      text-shadow: 2px 2px 4px rgba(255, 255, 255, 2);
+      padding: 10px;
+      text-align: center;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div class="header">
+    <img class="logo" src="./motorola-11.svg" alt="Motorola logo">
+    <h2>C TEST DASHBOARD</h2>
+    <nav>
+      <ul class="navbar">
+        <li><a href="/home" class="active"><i class="fa fa-home"></i> HOME</a></li>
+        <li><a href="/dashboard" class="active"><i class="fa fa-dashboard"></i> DASHBOARD</a></li>
+        <li><a href="/ctest" class="active"><span class="icon"><i class="fa fa-gear fa-spin"
+                style="font-size:17px"></i></span><span class="text">CTEST</a></span></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="container">
+    <h4>TEST CASE1</h4>
+    <div class="result">
+      <span>TOTAL TEST CASES</span>
+      <p>
+        <%= result.totalTCs %>
+      </p>
+    </div>
+    <div class="result" id="pass">
+      <span>PASSED TEST CASES</span>
+      <p>
+        <%= result.passedTCs %>
+      </p>
+    </div>
+    <div class="result" id="fail">
+      <span>FAILED TEST CASES</span>
+      <p>
+        <%= result.failedTCs %>
+      </p>
+    </div>
+    <div class="result">
+      <span>TOTAL TIME TAKEN</span>
+      <p>
+        <%= result.totalTimeTaken %>
+      </p>
+    </div>
+
+  </div>
+  <div class="footer">
+    <p>&copy; TEST CASE RESULT</p>
+  </div>
+</body>
+
+</html>

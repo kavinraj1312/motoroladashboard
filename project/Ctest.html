@@ -1,0 +1,167 @@
+<head>
+    <meta http-equiv='content-type' content='text/html; charset=UTF-8'' />
+<style>
+div{border:1px solid white;border-bottom:1px solid gray;padding:1px}
+a{text-decoration:none;color:white;}
+a.INFO{color:black}
+a.START,a.STOP{color:black;font-weight:bold;}
+div.INFO{background-color:white}
+div.SUCCESS{background-color:green;color:white}
+div.FAILURE,div.ERROR{background-color:red;color:white}
+a.CUSTOM, a.CUSTOM2, a.CUSTOM4{color:black}
+div.CUSTOM{background-color:yellow;}
+div.CUSTOM1{background-color:orange;}
+div.CUSTOM2{background-color:#EFEFEF;}
+div.CUSTOM3{background-color:green;}
+div.CUSTOM4{background-color:violet;}
+div.CUSTOM5{background-color:indigo;}
+a.SCRIPT{text-decoration:underline;}
+span.extra{color:#CCC;}
+div.SKIPPED{background-color:#eed;}
+a.SKIPPED{color:gray;}
+table{border-top:1px solid gray;border-right:1px solid gray;border-spacing:0px;border-collapse:collapse;}td{border-bottom:1px solid gray;border-left:1px solid gray;padding:5px;text-align:left;}
+td a.SCRIPT{float:left;}
+tr.FAILURE{background-color:red;color:white;}
+tr.SUCCESS{background-color:green;color:white;}
+tr.vc{background-color:#8A1805;color:white;}
+tr.vc2{background-color:#8C8E8E;color:white;}a{color:white;}
+table, th, td {border: 1px solid black;}
+</style><h1 style="font-family:verdana;font-size:25px;margin-top:16px;margin-left:5px;margin-bottom:25px;"class='
+        heady'>Test Report</h1>
+</head>
+
+<body style="background-color:powdergray;">
+    <table class='summary'>
+        <tr class='vc'>
+            <td>Test ID</td>
+            <td>TC Detail</td>
+            <td>Result</td>
+            <td>TC Type</td>
+            <td>Function</td>
+            <td>Total Time Taken</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_134</td>
+            <td>UPM:Switch_to_Profile2: ATF_4</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Switch_to_Profile2_ATF4</td>
+            <td>39.566 sec</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_134</td>
+            <td>UPM:Switch_to_Profile2: ATF_5</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Switch_to_Profile2_ATF5</td>
+            <td>38.482 sec</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_135</td>
+            <td>UPM:Perform 1-1 call from switched profile2</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Profile2_1to1_call</td>
+            <td>41.851 sec</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_137</td>
+            <td>UPM:Send ptx text to group from profile2</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Profile2_Group_PTX_Text</td>
+            <td>41.215 sec</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_138</td>
+            <td>UPM:Send ptx audio to group from profile2</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Profile2_Group_PTX_Audio</td>
+            <td>45.218 sec</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_139</td>
+            <td>UPM:Send ptx video to group from profile2</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Profile2_Group_PTX_Video</td>
+            <td>46.938 sec</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_140</td>
+            <td>UPM:Send ptx image to group from profile2</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Profile2_Group_PTX_Image</td>
+            <td>52.148 sec</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_141</td>
+            <td>UPM:Send ptx document to group from profile2</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Profile2_Group_PTX_Loc</td>
+            <td>38.081 sec</td>
+        </tr>
+        <tr class='FAILURE'>
+            <td>TC_141</td>
+            <td>Switch_to_DefaultProfile_ATF4</td>
+            <td>FAILED</td>
+            <td>realClient</td>
+            <td>Switch_to_DefaultProfile_ATF4</td>
+            <td>173.518 sec</td>
+        </tr>
+        <tr class='SUCCESS'>
+            <td>TC_141</td>
+            <td>Switch_to_DefaultProfile_ATF5</td>
+            <td>PASSED</td>
+            <td>realClient</td>
+            <td>Switch_to_DefaultProfile_ATF5</td>
+            <td>46.806 sec</td>
+        </tr>
+        <p>
+        <table class='heady'>
+            <h3><u><span style="font-family:verdana;font-size:16px;color:#8A1805;">Re-attempted Failures</span></u>
+                <p>
+            </h3>
+            <tr class='FAILURE'>
+                <td>TC_141</td>
+                <td>Switch_to_DefaultProfile_ATF4</td>
+                <td>FAILED</td>
+                <td>realClient</td>
+                <td>Switch_to_DefaultProfile_ATF4</td>
+                <td>159.726 sec</td>
+            </tr>
+        </table>
+        <h2></h2>
+        <table class="final" style="width:20%;margin-top: 15px" align="left">
+            <tr class='vc'>
+                <th>Testcases</th>
+                <th>Result</th>
+            </tr>
+            <tr class='vc2'>
+                <td>Total TCs</td>
+                <td>10</td>
+            </tr>
+            <tr class='vc2'>
+                <td>Passed TCs</td>
+                <td>9</td>
+            </tr>
+            <tr class='vc2'>
+                <td>Failed TCs</td>
+                <td>1</td>
+            </tr>
+            <tr class='vc2'>
+                <td>Total Time-taken</td>
+                <td>00:12:18</td>
+            </tr>
+        </table><input type="submit" value="Mobile UI Logs"
+            onclick="window.open('C:/Users/CIseeTest-autmn/Desktop/SeeTest/REPORTS/MOBILE_08-06-2024_reports/index.html','_blank')"
+            style="font-family:Georgia;font-size : 15px; width: 13%;height: 50px;margin-right: 30px;margin-left: 100px;margin-top: 30px;background-color:#DEA15C;color:black;" /><input
+            type="submit" value="Chrome UI Snapshots"
+            onclick="window.open('C:/Users/CIseeTest-autmn/Desktop/SeeTest/REPORTS/CHROME_08-06-2024_21.39_reports','_blank')"
+            style="font-family:Georgia;font-size : 15px; width: 13%;height: 50px;margin-right: 30px;background-color:#DEA15C;color:black;" /><input
+            type="submit" value="E2E Execution log"
+            onclick="window.open('C:/Users/CIseeTest-autmn/Desktop/SeeTest/ExecMobileOp.log_2024-06-08','_blank')"
+            style="font-family:Georgia;font-size : 15px; width: 13%;height: 50px;margin-right: 30px;background-color:#DEA15C;color:black;" /><br><br><br><br><br>
