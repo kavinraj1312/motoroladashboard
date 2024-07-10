@@ -4,4 +4,6 @@ LOGIN PAGE
 
 SIGNUP PAGE
 
+![signup](https://github.com/kavinraj1312/motoroladashboard/assets/173253246/447ba0c1-dcc3-456b-bf1d-efbf8802831f)
+
 
